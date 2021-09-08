@@ -1,7 +1,6 @@
-package edu.escuelaing.arep;
+package edu.escuelaing.arep.tiempo;
 
 import edu.escuelaing.arep.httpService.HttpService;
-import edu.escuelaing.arep.tiempo.TiempoServic;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -10,12 +9,11 @@ import java.util.logging.Logger;
 public class Cliente {
 
     public static void main(String[] args){
-        String stock = "Bogota";
+        String stock = "Myrtle Beach";
         HttpService stockService = TiempoServic.getInstance().getService();
 
 
         stockService.setStock(stock);
-
 
         String response = "None";
         try{

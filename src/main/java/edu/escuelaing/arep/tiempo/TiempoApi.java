@@ -4,7 +4,7 @@ import edu.escuelaing.arep.httpService.HttpService;
 
 public class TiempoApi extends HttpService {
 
-    String stock = "Bogota";
+    String stock = "Cali";
     String function = "TIME_SERIES_INTRADAY";
     String URL = "http://api.openweathermap.org/data/2.5/weather?q="+stock+"&appid=63429292f7ee01de230f2efd22bb6449";
     @Override
